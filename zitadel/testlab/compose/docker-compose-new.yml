@@ -33,7 +33,7 @@ services:
         condition: 'service_healthy'
 
   zitadel-init:
-    user: '$UID'
+    user: "${UID:-1000}"
     image: '${ZITADEL_IMAGE:-ghcr.io/zitadel/zitadel:latest}'
     command: 'init --config /zitadel.yaml'
     depends_on:
