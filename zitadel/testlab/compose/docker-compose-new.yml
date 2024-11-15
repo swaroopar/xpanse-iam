@@ -19,7 +19,7 @@ services:
       ZITADEL_DATABASE_POSTGRES_ADMIN_SSL_MODE: disable
       ZITADEL_EXTERNALPORT: 443
       ZITADEL_EXTERNALSECURE: true
-      ZITADEL_TLS_ENABLED: false
+      ZITADEL_TLS_ENABLED: true
       ZITADEL_EXTERNALDOMAIN: iam.xpanse.site
 
     depends_on:
