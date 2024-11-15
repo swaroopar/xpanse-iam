@@ -2,6 +2,7 @@ version: '3.8'
 
 services:
   zitadel:
+    user: "${UID:-1000}"
     extends:
       service: zitadel-init
     command: 'start-from-setup --init-projections --masterkey "MasterkeyNeedsToHave32Characters" --config /zitadel.yaml --steps /zitadel.yaml'
