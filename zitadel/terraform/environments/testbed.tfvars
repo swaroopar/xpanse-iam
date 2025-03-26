@@ -1,8 +1,11 @@
-domain                             = "iam.xpanse.site"
+domain                             = "iam.xpanse.dev"
 insecure                           = "false"
 port                               = "443"
-xpanse-ui_base_uri                 = "https://demo.xpanse.site"
-xpanse_swagger-ui_base_uri         = "https://demo.xpanse.site"
+xpanse-ui_base_uri                 = "https://demo.xpanse.dev"
+xpanse_swagger-ui_base_uri         = "https://demo.xpanse.dev"
 terraform-boot_swagger-ui_base_uri = "http://localhost:9090"
 tofu-maker_swagger-ui_base_uri     = "http://localhost:9092"
 auth_token_type                    = "JWT"
+jwt_profile_file                   = "312771563864778108.json"
+is_local_dev_env                   = false
+test_users = []
