@@ -1,0 +1,10 @@
+server {
+    listen 8080;
+    http2 on;
+    server_name ${APP_ID};
+
+    location / {
+	    grpc_pass grpc://${API_HOST}:8080;
+	    grpc_set_header Host $host;
+        }
+}
